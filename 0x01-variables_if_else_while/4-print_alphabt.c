@@ -18,6 +18,7 @@ else
 putchar(lw);
 lw += 1;
 }
+}
 putchar('\n')
 return (0);
 }

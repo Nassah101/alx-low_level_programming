@@ -11,7 +11,7 @@ int l = 'a';
 while (l <= 'z')
 {
 putchar(l);
-l = +1;
+l += 1;
 }
 putchar('\n');
 return (0);

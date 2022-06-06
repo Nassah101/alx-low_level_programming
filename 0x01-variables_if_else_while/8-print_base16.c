@@ -16,7 +16,7 @@ n += 1;
 while (l <= 'f')
 {
 putchar(l)
-l++;
+l += 1;
 }
 putchar("\n");
 return (0);
