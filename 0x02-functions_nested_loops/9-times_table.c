@@ -3,7 +3,7 @@
 * times_table - prints the times table from 0 - 9
 * Return: 0
 */
-void time_table(void)
+void times_table(void)
 {
 int i, j, res;
 for (i = 0; i <= 9; i++)
