@@ -2,21 +2,20 @@
 /**
 * print_line - Draws a straight line according to parameter
 * @n: The number of lines to draw
-* Return: empty
+* Return: nothing
 */
-void print_line(inr n)
+void print_line(int n)
 {
-int x;
-if (n <= 0)
+int i;
+while (i < n)
 {
-_putchar('\n');
+if (n > 0)
+{
++putchar(95);
+i += 1;
 }
 else
-{
-for (x = 0; x < n; x++)
-{
-_putchar(95);
-}
 _putchar('\n');
 }
+_putchar('\n');
 }
