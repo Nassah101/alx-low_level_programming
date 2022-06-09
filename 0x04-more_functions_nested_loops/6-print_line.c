@@ -6,12 +6,12 @@
 */
 void print_line(int n)
 {
-int i;
+int i = 0;
 while (i < n)
 {
 if (n > 0)
 {
-+putchar(95);
+_putchar(95);
 i += 1;
 }
 else
