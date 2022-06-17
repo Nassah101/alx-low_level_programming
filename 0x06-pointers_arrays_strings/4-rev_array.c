@@ -22,6 +22,6 @@ aux = *(init + j);
 *(init + j) = *(final + i);
 *(final + i) = aux;
 j++;
-i++;
+i--;
 }
 }
