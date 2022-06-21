@@ -14,7 +14,8 @@ while (*haystack != '\0')
 {
 res = haystack;
 aux = needle;
-while (*aux == *haystack && *aux != '\0' && *haystack != '\0')
+while (*aux == *haystack && *aux != '\0'
+&& *haystack != '\0')
 {
 haystack++;
 aux++;

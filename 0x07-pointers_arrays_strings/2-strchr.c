@@ -1,4 +1,5 @@
-#imclude "main.h"
+#include "main.h"
+#include <stdio.h>
 /**
 * _strchr - functions that locates a character in a string
 * @s: string to receive and return
