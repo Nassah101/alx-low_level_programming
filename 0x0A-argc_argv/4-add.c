@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
+#include "main.h"
 /**
 * check_digit - checks if a given char is number or not
 * @a: input char
 * Return: int
-**/
+*/
 int check_digit(char *a)
 {
 int i, num, len;
@@ -29,7 +31,7 @@ return (num);
 * @argc: argument count
 * @argv: argument vector
 * Return: int
-**/
+*/
 int main(int argc, char *argv[])
 {
 int i, num, res,

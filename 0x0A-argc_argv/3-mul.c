@@ -4,32 +4,22 @@
 * main - program that prints all arguments it receives
 * @argc: argument count
 * @argv: argument vector
-* Return: int
+* Return: 1 if not enough arguments passed in, 0 otherwise
 */
 int main(int argc, char *argv[])
 {
-int count, num1, num2, res;
-count = num1 = num2 = res = 0;
-if (argc > 0)
-{
-while (count < argc)
-{
-if (argc == 3)
-{
-if (count == 1)
-num1 = atoi(argv[count]);
-else if (count == 2)
-num2 = atoi(argv[count]);
-}
-else
+int i, j;
+if (argc == 1 || argc == 2)
 {
 printf("Error\n");
 return (1);
 }
-res = (num1 * num2);
-count++;
-}
-printf("%d\n", res);
+else
+{
+j = 1;
+for (i = 1; i < 3; i++)
+j *= atoi(argv[i]);
+printf("%d\n", j);
 }
 return (0);
 }

@@ -4,17 +4,10 @@
 * main - program that prints its name
 * @argc: argument count
 * @argv: argument vector
-* Return: int
+* Return: 0
 */
 int main(int argc, char *argv[])
 {
-int count;
-for (count = 0; counnt < argc; count++)
-{
-if (argc == 1)
-printf("%s\n", argv[count]);
-else
-break;
-}
+printf("%s\n", argv[argc * 0]);
 return (0);
 }
