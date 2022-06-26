@@ -8,7 +8,7 @@
 * @i: Passed in variable from main for calculations
 * Return: The number of coins needed minimum for the passed in variable
 */
-int coinconverter(int i)
+int coinConverter(int i)
 {
 int count = 0;
 while (i != 0)
@@ -54,7 +54,7 @@ if (i < 0)
 printf("0\n");
 else
 {
-coin = coinconverter(i);
+coin = coinConverter(i);
 printf("%d\n", coin);
 }
 return (0);

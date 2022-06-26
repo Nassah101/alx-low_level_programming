@@ -4,8 +4,8 @@
 #include <ctype.h>
 #include "main.h"
 /**
-* check_digit - checks if a given char is number or not
-* @argc: number of command line arguments
+* main - Program that takes all integer arguments and returns the sum
+* @argc: Number of command line arguments
 * @argv: Array name
 * Return: 1 if a non-integer is among the passed in arguments, 0 otherwise
 */
