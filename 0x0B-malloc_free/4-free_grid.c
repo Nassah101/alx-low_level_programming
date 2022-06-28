@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 /**
 * free_grid - function that fress a 2D grid of int pointers
