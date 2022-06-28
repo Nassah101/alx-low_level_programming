@@ -28,7 +28,7 @@ return (NULL);
 for (i = 0; i < ac; i++)
 len += _strlen_recursion(av[i]) + 1;
 s = malloc(sizeof(char) * len + 1);
-if (s ++ NULL)
+if (s == NULL)
 return (NULL);
 for (i = 0; i < ac; i++)
 {
