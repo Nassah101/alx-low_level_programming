@@ -14,7 +14,7 @@ return (0);
 }
 /**
 * argstostr - function that concatenates all the arguments of your program
-* @sc: int for number of argumentd
+* @ac: int for number of argumentd
 * @av: char double pointer for array of arguments
 * Return: chaar pointer with concatenated arguments, NULL if fail or if
 * arguments passed are NULL or if number of argument is equal to 0
@@ -33,7 +33,7 @@ return (NULL);
 for (i = 0; i < ac; i++)
 {
 l = _strlen_recursion(av[i]);
-for (j =0; j < l; j++)
+for (j = 0; j < l; j++)
 s[j + tl] = av[i][j];
 s[l + tl] = '\n';
 tl += l + 1;
