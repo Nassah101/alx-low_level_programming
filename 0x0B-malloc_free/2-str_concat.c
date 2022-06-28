@@ -1,28 +1,28 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 /**
 * str_concat - entry point
-* @s1: string 1
-* @s2: string 2
-* Return: pointer should point to a newly allocated space in memory or NULL
+* @s1: char pointer for string 1
+* @s2: char pointer for string 2
+* Return: char pointer of concatenated string
 */
 char *str_concat(char *s1, char *s2)
 {
-int i, j, k;
-char *newstr = NULL;
+char *a;
+int i, j;
+a = malloc(2 * sizeof(char *) + 1);
+if (a == NULL)
+return (NULL);
 if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
+if (s1 == NULL && s2 == NULL)
+return (s1);
 for (i = 0; s1[i] != '\0'; i++)
-;
+a[i] = s1[i];
 for (j = 0; s2[j] != '\0'; j++)
-;
-newstr = (char*)malloc((i + j) * sizeof(char));
-if (newstr == NULL)
-return (NULL);
-for (k = 0; s1[k] != '\0'; k++)
-newstr[k + i] = s2[k];
-return (newstr);
+a[i + j] = s2[j];
+a[i + j] = '\0';
+return (a);
 }
