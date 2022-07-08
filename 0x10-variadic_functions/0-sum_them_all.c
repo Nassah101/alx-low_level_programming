@@ -1,4 +1,3 @@
-#include <stdarg.h>
 #include "variadic_functions.h"
 /**
 * sum_them_all - variadic function that takes in a variable number of
@@ -9,14 +8,22 @@
 */
 int sum_them_all(const unsigned int n, ...)
 {
-va_list sumlist;
 unsigned int i;
-int sum = 0;
-if (m == 0)
+va_list list;
+double sum = 0;
+if (n == 0)
+{
 return (0);
-va_start(sumlist, n);
+}
+if (n == 0)
+{
+return (0);
+}
+va_start(list, n)
 for (i = 0; i < n; i++)
-sum += va_arg(sumlist, int);
-va_end(sumlist);
-return (sum)
+{
+sum += va_arg(list, int);
+}
+va_end(list);
+return (sum);
 }
